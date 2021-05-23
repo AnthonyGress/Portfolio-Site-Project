@@ -248,6 +248,7 @@ h5, .card-body {
     margin-top: 40px;
     position: relative;
 }
+}
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
