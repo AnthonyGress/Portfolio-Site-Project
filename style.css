@@ -242,6 +242,11 @@ h5, .card-body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .half-panel {
+    width: 80%;
+    height: 100%;
+    margin-top: 40px;
+    position: relative;
 }
 
 /* Change navbar styling on small viewports */
