@@ -256,7 +256,7 @@ h5, .card-body {
   .navbar .navbar-brand, .navbar .nav-link{
       color: #fff;
   }
-}
+
 
 .navbar.active {
   background: #57595c;
@@ -278,6 +278,7 @@ h5, .card-body {
 
 .navbar.mobile-active{
   background: #57595c;
+}
 }
 
 .hello {
