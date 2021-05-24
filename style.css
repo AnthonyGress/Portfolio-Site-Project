@@ -70,9 +70,12 @@ body, html {
 .hero .hero_content h1, .hero .hero_content p {
   color:#fff;
 }
-@media screen and (max-width:767px) and (max-height:415px){
+@media (max-width:900px) and (max-height:415px){
   .hero .hero_content {
       padding:50px 0;
+ }
+ .hello {
+   margin-top: 20%;
  }
 }
 
