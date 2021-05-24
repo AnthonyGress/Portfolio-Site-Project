@@ -53,7 +53,7 @@ body, html {
 
 }
 .hero::before {
-  background-image: url(img/splash1.jpg);
+  /* background-image: url(img/splash1.jpg); */
   content:'';
   width:100%;
   position:absolute;
