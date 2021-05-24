@@ -16,8 +16,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
-    <!-- <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script> -->
-    <!-- <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+    <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
     <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
@@ -28,8 +28,8 @@
     <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    -->
-    <link rel="apple-touch-startup-image" href="apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   
+    <!-- <link rel="apple-touch-startup-image" href="apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -41,10 +41,10 @@
     <link rel="apple-touch-startup-image" href="apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="apple-mobile-web-app-title" content="Tech X Guy">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta property="og:site_name" content="Tech X Guy" />
     <meta property=“og:title” content="Solving problems and teaching people skills to make their lives easier" />
     <meta property="og:type" content="website" />
@@ -57,16 +57,16 @@
     <!--TODO
     - New About Me Photo
     - blurbs about services / simplify
-    - move phoenix and liquid flow to portfolio
     - css animation circle/ slide/ wipe/ overlay like google buds
-    - reorder testimonials
+    - fix slide in animation
+    - more about me? Phoenix
     - add in real resume file
     -->
   </head>
   <body ontouchstart=””>
     <header></header>
     <div class="hero" id="home">
-      <nav class="navbar navbar-expand-lg navbar-dark py-0 autohide fixed-top" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark py-0 fixed-top" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="#home">
             <img src="img/penrose-outline-white.png" width="60" height="60" class="d-inline-block align-middle logo1" alt="logo">
@@ -107,10 +107,10 @@
       </nav>
       <div class="jumbotron hero_content">
         <div class="container">
-          <h1 class="display-4 hello">Hi, I'm Anthony</h1>
+          <h1 class="display-4 hello fade-in show-on-scroll">Hi, I'm Anthony</h1>
           <p class="lead fade-in-delay show-on-scroll intro">I am a Tech Support Specialist, Repair Technician, Fire Performer and Aspiring Web Developer</p>
           <p class="lead fade-in-delay2 show-on-scroll intro2">I solve technical problems and teach people skills to make their lives easier</p>
-          <a class="btn btn-primary btn-lg p-2 mt-5 fade-in-delay3 show-on-scroll" href="#about" role="button">Learn more</a>
+          <a class="btn btn-primary btn-lg p-2 mt-5 fade-in-delay3 show-on-scroll learn-more" href="#about" role="button">Learn more</a>
         </div>
       </div>
     </div>
@@ -183,26 +183,15 @@
   
     <div class="col-lg-6 container">
       <div class="">
-        <h2 class="display-4 slideinright show-on-scroll">About Me</h2>
+        <h2 class="display-4 slideinright show-on-scroll" id="about-header">About Me</h2>
           <p class="content">I have always had a passion for technology. Throughout my life, I have been constantly tinkering with, building, and fixing electronics. I studied Computer Science at the University of Central Florida to pursue my passion for technology. For the last year I have been providing tech support for Verizon Wireless customers. I obtained my A+ Certification from CompTIA and I am continuously furthering my education. I have studied network tools and infrastructure, web development, and cybersecurity. I actually built this website from the ground up using HTML, CSS, and Javascript. Check out my portfolio to see other projects that I have been working on lately!
           </p>
           <p class="content">While studying at the university, I encountered many new people and ideas and was introduced to a new passion: yoga and movement arts. Shortly thereafter I witnessed my first fire dancing performance, and I was immediately mesmerized. After years of practice, I started my first small business: Phoenix Fire & Performance Art, and I became a certified Yoga Instructor. At Phoenix Fire, I led a troupe of performers who specialized in fire dancing, acrobatics, juggling, LED light shows, fire eating, and fire breathing! As my business developed, I realized that myself and many others had a need for higher quality tools to be used for training and performing. This is what led me to start my second business: Liquid Flow Props. At Liquid Flow I designed, manufactured, sold, and repaired high quality fire performance tools. After 6 insightful years, I shut down Phoenix Fire and Liquid Flow in order to pursue my career in IT. Though that may have been the end of a chapter, a Phoenix never really dies does it? Below, you can check out my websites for both of these startups to learn more. 	
           </p>
-          <!-- <div class="row">
-            <a href="https://liquidflowprops.wixsite.com/phoenix-fire" target="_blank">
-            <button type="button" class="btn btn-primary button-phoenix">Learn More About Phoenix Fire</button>
-            </a>
-          </div>               -->
           <div class="container pb-4">
             <div class="text-center">
-                <a href="https://liquidflowprops.wixsite.com/phoenix-fire" target="_blank">
-                <button type="button" class="btn btn-primary ml-2 my-3">Phoenix Fire Website</button>
-                </a>
                 <a href="files/Resume.pdf" download="Anthony-Resume" target="_blank">
                   <button type="button" class="btn btn-primary ml-2 my-3" style="text-decoration: line-through;">Download My Resume</button>
-                  </a>
-                <a href="https://liquidflowprops.wixsite.com/liquidflowprops" target="_blank">
-                  <button type="button" class="btn btn-primary ml-2 my-3">Liquid Flow Website</button>
                   </a>
               </div>
           </div>
@@ -227,8 +216,9 @@
     <div class="service1">
     </div>
     <div class="row">
-      <div class="col-sm-6 row-services-heading">
-        <h2>Tech Support</h2>
+      <div class="col-sm-6 text-center my-auto">
+        <h2 class="row-services-heading">Tech Support</h2>
+        <p> I create solutions for various issues both at home and in the office. Blurb.</p>
       </div>
       <div class="col-sm-6 row-services">
         <ul class="list-items">
@@ -247,8 +237,9 @@
     <div class="service2">
     </div>
     <div class="row">
-      <div class="col-sm-6 row-services-heading">
-        <h2>Device Repair & Upgrades</h2>
+      <div class="col-sm-6 text-center my-auto">
+        <h2 class="row-services-heading">Device Repair & Upgrades</h2>
+        <p> I create solutions for various issues both at home and in the office. Blurb.</p>
       </div>
       <div class="col-sm-6 row-services">
         <ul class="list-items">
@@ -266,8 +257,9 @@
       <div class="service3">
       </div>
       <div class="row">
-        <div class="col-sm-6 row-services-heading">
-          <h2>Office Streamlining & Organization</h2>
+        <div class="col-sm-6  text-center my-auto">
+          <h2 class="row-services-heading">Office Streamlining & Organization</h2>
+          <p> I create solutions for various issues both at home and in the office. Blurb.</p>
         </div>
         <div class="col-sm-6 row-services">
           <ul class="list-items">
@@ -322,30 +314,50 @@
   </div>
   <!--Projects Links-->
   <div class="container">
-    <!--Project1-->
     <div class="row row-projects bg-color text-center">
-      <div class="col-lg-4 my-2">
-        <div>Fire Scripts CLI</div>
+      <div class="col-lg-6 my-2 pb-3">
+        <a class="btn btn-primary btn-lg p-2" href="#about" role="button">Fire Scripts CLI</a>
         <a href="https://github.com/techx-guy/Fire-Scripts-CLI" target="_blank" draggable="false">
           <img src="img/Fire Scripts CLI Splash.png" alt="github project 1" class="project1" draggable="false">
         </a>
     </div>
   
-    <!--Project2-->
-      <div class="col-lg-4 my-2">
-        <div class="">CV Website</div>
-        <a href="https://github.com/techx-guy/Portfolio-Site-Project" target="_blank" draggable="false">
-          <img src="img/My Site Splash.png" alt="github project 2" class="project1 pb-2" draggable="false">
-        </a>
-      </div>
-    <!--Project3-->
-
-    <div class="col-lg-4 my-2">
-      <div class="">Fire Scripts GUI</div>
+    <div class="col-lg-6 my-2 pb-3">
+      <a class="btn btn-primary btn-lg p-2" href="#about" role="button">Fire Scripts GUI</a>
       <a href="https://github.com/techx-guy/Fire-Scripts-GUI" target="_blank" draggable="false">
         <img src="img/Fire Scripts GUI Splash.png" alt="github project 3" class="project1" draggable="false">
       </a>
     </div>
+
+
+    <div class="col-lg-6 my-2 pb-5">
+      <a class="btn btn-primary btn-lg p-2 mb-3" href="#about" role="button">Phoenix Fire</a>
+      <a href="https://liquidflowprops.wixsite.com/phoenix-fire" target="_blank" draggable="false">
+        <img src="img/Phoenix Site.png" alt="phoenix fire" class="project1 pb-4" draggable="false">
+      </a>
+    </div>
+
+      <div class="col-lg-6 my-2">
+        <a class="btn btn-primary btn-lg p-2 mb-3" href="#about" role="button">Liquid Flow</a>
+        <a href="https://liquidflowprops.wixsite.com/liquidflowprops" target="_blank" draggable="false">
+          <img src="img/LF Site.png" alt="Liquid flow" class="project1 pb-4 resize-img" draggable="false">
+      </a>
+    </div>
+
+    <div class="col-lg-6 my-2 mx-auto pb-5">
+      <a class="btn btn-primary btn-lg p-2 mt-5" href="#about" role="button">Portfolio Website</a>
+      <a href="https://github.com/techx-guy/Portfolio-Site-Project" target="_blank" draggable="false">
+        <img src="img/My Site Splash.png" alt="github project 2" class="project1 pb-2" draggable="false">
+      </a>
+    </div>
+        <!-- Project6
+
+        <div class="col-lg-4 my-2">
+          <div class="">View My GitHub</div>
+        <a href="https://github.com/techx-guy" target="_blank" draggable="false">
+          <img src="img/" alt="Github" class="project1" draggable="false">
+        </a>
+      </div> -->
   </div>
 </div>  
 <!--Testimonials Header-->
@@ -386,7 +398,7 @@
         <div class="card card-shadow border-0 mb-5">
           <div class="card-body">
             <div class="position-relative thumb bg-success-gradiant d-inline-block text-color mb-4"><img src="img/face3.jpg" alt="wrapkit" class="thumb-img position-absolute rounded-circle">3</div>
-            <h5 class="font-weight-light">"Outstanding customer service! Great communication. Wonderful attitude. Thank you Anthony! Very satisfied."</h5>
+            <h5 class="font-weight-light">"Outstanding customer service! Great communication. Wonderful attitude. Thank you Anthony! Very satisfied. He explained why I was having the issue versus just correcting the issue."</h5>
             <span class="devider d-inline-block"></span>
           </div>
         </div>
@@ -405,7 +417,7 @@
         <div class="card card-shadow border-0 mb-4">
           <div class="card-body">
             <div class="position-relative thumb bg-success-gradiant d-inline-block text-color mb-4"><img src="img/face6.jpg" alt="wrapkit" class="thumb-img position-absolute rounded-circle">4</div>
-            <h5 class="font-weight-light">"I don’t know how much easier he could have helped me and I would never want any other type of phone. I can usually tell when a person is sincere and really wants to help. I am an older woman and he was very patient and did not rush me."</h5>
+            <h5 class="font-weight-light">"I don’t know how much easier he could have made it. He helped me and I would never want any other type of phone. I can usually tell when a person is sincere and really wants to help. I am an older woman and he was very patient and did not rush me."</h5>
             <span class="devider d-inline-block my-3"></span>
           </div>
         </div>
@@ -493,11 +505,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <!--Animations on scroll-->
-  <script src="js/show-on-scroll.min.js"></script>
+  <script src="js/show-on-scroll.js"></script>
   <!--darkmode script-->
   <script src="js/dark-mode-switch.min.js"></script>
   <!--Autohide navbar-->
-  <script src="js/autohide-clean.min.js"></script>
+  <script src="js/autohide-clean.js"></script>
   </body>
   <footer>
     <div class="footer-text">Face Photos by <a href="https://generated.photos/">Generated Photos</a></div>

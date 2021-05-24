@@ -4,6 +4,9 @@ var scroll = window.requestAnimationFrame ||
              function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
 var contact = document.getElementById('contact');
+var hello = document.getElementsByClassName('hello')
+var intro = document.getElementsByClassName('intro')
+var intro2 = document.getElementsByClassName('intro2')
 
 
 function loop() {
@@ -16,15 +19,9 @@ function loop() {
       else {
         element.classList.remove('is-visible');
       }
-      
     });
-    if (isElementInViewport(contact)){
-      return;
-    }
-    else {
-      scroll(loop);
-    }
-    // scroll(loop);
+
+    scroll(loop);
 }
 
 // Call the loop for the first time
