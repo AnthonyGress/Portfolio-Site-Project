@@ -169,9 +169,6 @@ h5, .card-body {
 
 .navbar {
   z-index: 999;
-  /* -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background:rgba(0,0,0,0.5); */
 }
 
 .navbar-blur-dark {
