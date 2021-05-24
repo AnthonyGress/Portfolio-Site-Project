@@ -75,6 +75,9 @@ body, html {
   .hero .hero_content {
       padding:50px 0;
  }
+ .hello {
+   margin-top: -10%;
+ }
 }
 
 /*end hero*/
