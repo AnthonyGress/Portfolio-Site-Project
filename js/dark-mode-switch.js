@@ -22,15 +22,13 @@
         $('#css-img').attr('src','img/css-dark.png')
         $('#js-img').attr('src','img/js-dark.png')
         $('#macos-img').attr('src','img/macos-dark.png')
-        $('#linux-img').attr('src','img/linux-dark.png')
-        $('#splash-img').attr('src','img/dark-splash.jpg');
+        $('#linux-img').attr('src','img/linux-dark.png');
       } else {
         $('#html-img').attr('src','img/html.png')
         $('#css-img').attr('src','img/css.png')
         $('#js-img').attr('src','img/js.png')
         $('#macos-img').attr('src','img/macos.png')
-        $('#linux-img').attr('src','img/linux.png')
-        $('#splash-img').attr('src','img/blue_mountains.jpg');
+        $('#linux-img').attr('src','img/linux.png');
       }
     }
     function resetTheme() {
@@ -42,7 +40,6 @@
         $('#js-img').attr('src','img/js-dark.png');
         $('#macos-img').attr('src','img/macos-dark.png');
         $('#linux-img').attr('src','img/linux-dark.png');
-        $('#splash-img').attr('src','img/dark-splash.jpg');
       } else {
         document.body.setAttribute("data-theme", "light");
         localStorage.setItem("darkSwitch", "light");
@@ -51,7 +48,6 @@
         $('#js-img').attr('src','img/js.png');
         $('#macos-img').attr('src','img/macos.png');
         $('#linux-img').attr('src','img/linux.png');
-        $('#splash-img').attr('src','img/blue_mountains.jpg');
       }
     }
   }

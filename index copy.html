@@ -36,6 +36,8 @@
     <title>Tech X Guy</title>
     <!--TODO
     - New About Me Photo
+    - show navbar on scroll up mobile / blurred navbar / center nav text? left align?
+    - bigger buttons mobile
     - move phoenix and liquid flow to portfolio
     - css animation circle/ slide/ wipe/ overlay like google buds
     - reorder testimonials
@@ -43,11 +45,10 @@
     -->
   </head>
   <body>
-    <header></header>
     <div class="hero" id="home">
-      <nav class="navbar navbar-expand-lg navbar-dark py-0 autohide fixed-top" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark py-0">
         <div class="container">
-          <a class="navbar-brand" href="#home">
+          <a class="navbar-brand" href="#">
             <img src="img/penrose-outline-white.png" width="60" height="60" class="d-inline-block align-middle logo1" alt="logo">
             <span>Tech X Guy</span>
           </a>
@@ -76,7 +77,7 @@
               </li>
               <li class="nav-item">
                 <div class="custom-control custom-switch theme-switch-wrapper">
-                  <input type="checkbox" class="custom-control-input" id="darkSwitch" checked>
+                  <input type="checkbox" class="custom-control-input" id="darkSwitch">
                   <label class="custom-control-label theme-switch" for="darkSwitch">Dark Mode</label>
                 </div>
               </li>
@@ -86,55 +87,13 @@
       </nav>
       <div class="jumbotron hero_content">
         <div class="container">
-          <h1 class="display-4 hello">Hi, I'm Anthony</h1>
-          <p class="lead fade-in-delay show-on-scroll intro">I am a Tech Support Specialist, Repair Technician, Fire Performer and Aspiring Web Developer</p><br>
-          <p class="lead fade-in-delay2 show-on-scroll intro2">I solve technical problems and teach people skills to make their lives easier</p><br>
-          <a class="btn btn-primary btn-lg p-2 mt-5 fade-in-delay3" href="#about" role="button">Learn more</a>
+          <h1 class="display-4">Hi, I'm Anthony</h1><br><br>
+          <p class="lead fade-in-delay show-on-scroll">I am a Tech Support Specialist, Repair Technician, Fire Performer and Aspiring Web Developer</p><br>
+          <p class="lead fade-in-delay2 show-on-scroll">I solve technical problems and teach people skills to make their lives easier</p><br><br>
+          <a class="btn btn-primary btn-lg show-on-scroll fade-in-delay3" href="#about" role="button">Learn more</a>
         </div>
       </div>
     </div>
-  <!-- <div class="hero">
-    <div class="container">
-    <nav class="navbar navbar-dark navbar-expand-lg py-0">
-      <a class="navbar-brand" href="#home">
-        <img src="img/penrose-outline-white.png" width="60" height="60" class="d-inline-block align-middle logo1" alt="logo">
-        <span>Tech X Guy</span>
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">current</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <div class="custom-control custom-switch theme-switch-wrapper">
-              <input type="checkbox" class="custom-control-input" id="darkSwitch">
-              <label class="custom-control-label theme-switch" for="darkSwitch">Dark Mode</label>
-            </div>
-          </li>
-        </ul>
-        </div>
-      </div>
-    </nav>
-  </div> -->
   <!--Welcome Section-->
   <!-- <div class="bg-img" id="home">
     <img src="img/splash1.jpg" id="splash-img" alt="mountains" draggable="false">
@@ -154,8 +113,8 @@
   </div> -->
 
   <!--About Me Section-->
-  <div>
-  <div class="row" id="about">
+  <div id="about">
+  <div class="row">
       <div class="col-lg-6">
         <img class="half-panel" src="img/demo_headshot.JPG" alt="headshot" loading="lazy" draggable="false">
       </div>
@@ -431,7 +390,7 @@
                           <h4 class="fade-in show-on-scroll">Questions, Comments, Ideas?</h4>
                           <div>
                             <a href="mailto:techx-guy@opayq.com?subject=Contact From Website&body=Dear Anthony,">
-                          <button class="btn btn-primary btn-lg my-5 p-3"> Let's Connect!</button>
+                          <button class="btn btn-primary my-5 p-2"> Let's Connect!</button>
                             </a>
                           </div>
                         </div>
@@ -472,13 +431,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <!--autoclose mobile navbar-->
-  <!-- <script src="js/nav_close.min.js"></script> -->
+  <script src="js/nav_close.min.js"></script>
   <!--Animations on scroll-->
   <script src="js/show-on-scroll.min.js"></script>
+  <!-- Navbar-scroll script -->
+  <script src="js/navbar-scroll.min.js"></script>
   <!--darkmode script-->
   <script src="js/dark-mode-switch.js"></script>
-  <!--Autohide navbar-->
-  <script src="js/autohide-clean.js"></script>
   </body>
   <footer>
     <div class="footer-text">Face Photos by <a href="https://generated.photos/">Generated Photos</a></div>
