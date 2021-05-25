@@ -19,9 +19,10 @@ $(document).ready(function() {
         $(".navbar").removeClass("mobile-navbar-collapsed");
       }
 
-      else if (document.getElementById('navbar-toggler').onclick==true)
+      else if (("navbarNavDropdown").hasClass("show"))
       {
-        alert("clicked");
+        $(".navbar").add("mobile-navbar-dropdown");
+        $(".navbar").removeClass("mobile-navbar-collapsed");
       }
         
     
