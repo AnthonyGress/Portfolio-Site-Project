@@ -14,7 +14,7 @@ $(document).ready(function() {
         $(".navbar").removeClass("mobile-navbar-dropdown");
         $(".navbar").addClass("mobile-navbar-collapsed");
       } 
-      else if (vw < 750 && navbarToggler.hasClass("show"))
+      else if (navbarToggler.hasClass("collapse show"))
       {
         $(".navbar").add("mobile-navbar-dropdown");
         $(".navbar").removeClass("mobile-navbar-collapsed");
@@ -23,10 +23,6 @@ $(document).ready(function() {
         $(".navbar").removeClass("mobile-navbar-dropdown");
         $(".navbar").removeClass("mobile-navbar-collapsed");
       }
-
-
-        
-    
     });
 
 

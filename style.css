@@ -225,6 +225,10 @@ h5, .card-body {
   margin-top: -14px;
 }
 
+.navbar-collapse.collapse.show {
+    max-height: 100%;
+    margin-top: -14px;
+}
 
 /* Change navbar styling on scroll Large Devices */
 @media (min-width: 992px) {
