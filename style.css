@@ -160,6 +160,11 @@ h5, .card-body {
     padding: 7px;
     visibility: visible;
   }
+
+  /* .navbar {
+    max-height: 80px;
+  } */
+
 }
 
 @media (min-width: 991.98px) {
@@ -179,6 +184,7 @@ h5, .card-body {
 
 .navbar {
   z-index: 999;
+  margin-top: -1px;
 }
 
 .navbar-blur-dark {
@@ -208,6 +214,17 @@ h5, .card-body {
 .navbar-brand {
   color: #fff;
 }
+
+.mobile-navbar-dropdown {
+  max-height: 100%;
+  margin-top: -14px;
+}
+
+.mobile-navbar-collapsed {
+  max-height: 75px;
+  margin-top: -14px;
+}
+
 
 /* Change navbar styling on scroll Large Devices */
 @media (min-width: 992px) {
@@ -295,6 +312,9 @@ h5, .card-body {
   }
   .blank-space {
     visibility: hidden;
+  }
+  .navbar {
+    max-height: 60px;
   }
 }
 
@@ -409,6 +429,11 @@ h1, h2, h4{
 .row-projects {
   max-width: 100%;
   color: var(--heading-color);
+}
+
+.project-div {
+  height: 100%;
+  width: 100%;
 }
 
 .bg-color {

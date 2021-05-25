@@ -16,7 +16,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
-    <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
     <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
@@ -28,20 +27,6 @@
     <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-   
-    <!-- <link rel="apple-touch-startup-image" href="apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="apple-mobile-web-app-title" content="Tech X Guy">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -63,17 +48,16 @@
     - add in real resume file
     -->
   </head>
-  <body ontouchstart=””>
+  <body ontouchstart="">
     <header></header>
     <div class="hero" id="home">
-      <div class="navbar-div">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="#home">
             <img src="img/penrose-outline-white.png" width="60" height="60" class="d-inline-block align-middle logo1" alt="logo">
             <span>Tech X Guy</span>
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -107,7 +91,6 @@
           </div>
         </div>
       </nav>
-    </div>
       <div class="jumbotron hero_content">
         <div class="container">
           <h1 class="display-4 hello fade-in show-on-scroll">Hi, I'm Anthony</h1>
@@ -318,14 +301,14 @@
   <!--Projects Links-->
   <div class="container">
     <div class="row row-projects bg-color text-center">
-      <div class="col-lg-6 my-2 pb-3">
+      <div class="col-lg-6 my-2 pb-3 project-div">
         <a class="btn btn-primary btn-lg p-2" href="https://github.com/techx-guy/Fire-Scripts-CLI" target="_blank" role="button">Fire Scripts CLI</a>
         <a href="https://github.com/techx-guy/Fire-Scripts-CLI" target="_blank" draggable="false">
           <img src="img/Fire Scripts CLI Splash.png" alt="github project 1" class="project1" draggable="false">
         </a>
     </div>
   
-    <div class="col-lg-6 my-2 pb-3">
+    <div class="col-lg-6 my-2 pb-3 project-div">
       <a class="btn btn-primary btn-lg p-2" href="https://github.com/techx-guy/Fire-Scripts-GUI" target="_blank" role="button">Fire Scripts GUI</a>
       <a href="https://github.com/techx-guy/Fire-Scripts-GUI" target="_blank" draggable="false">
         <img src="img/Fire Scripts GUI Splash.png" alt="github project 3" class="project1" draggable="false">
@@ -333,21 +316,21 @@
     </div>
 
 
-    <div class="col-lg-6 my-2 pb-5">
+    <div class="col-lg-6 my-2 pb-5 project-div">
       <a class="btn btn-primary btn-lg p-2 mb-3 mt-4" href="https://liquidflowprops.wixsite.com/phoenix-fire" target="_blank" role="button">Phoenix Fire</a>
       <a href="https://liquidflowprops.wixsite.com/phoenix-fire" target="_blank" draggable="false">
         <img src="img/Phoenix Site.png" alt="phoenix fire" class="project1 pb-4" draggable="false">
       </a>
     </div>
 
-      <div class="col-lg-6 my-2">
+      <div class="col-lg-6 my-2 project-div">
         <a class="btn btn-primary btn-lg p-2 mb-3 mt-4" href="https://liquidflowprops.wixsite.com/liquidflowprops" target="_blank" role="button">Liquid Flow</a>
         <a href="https://liquidflowprops.wixsite.com/liquidflowprops" target="_blank" draggable="false">
           <img src="img/LF Site.png" alt="Liquid flow" class="project1 pb-4 resize-img" draggable="false">
       </a>
     </div>
 
-    <div class="col-lg-6 my-5 mx-auto pb-5">
+    <div class="col-lg-6 my-5 mx-auto pb-5 project-div">
       <a class="btn btn-primary btn-lg p-2 mt-5" href="https://github.com/techx-guy/Portfolio-Site-Project" target="_blank" role="button">Portfolio Website</a>
       <a href="https://github.com/techx-guy/Portfolio-Site-Project" target="_blank" draggable="false">
         <img src="img/My Site Splash.png" alt="github project 2" class="project1 pb-2" draggable="false">
@@ -462,7 +445,7 @@
               <!-- <form action="mail.php" method="POST"> No PHP on Github Pages-->
                   <div class="bg-dark">
                       <div class="mt-0">
-                        <div id="contact" class="text-center">
+                        <div id="contact" class="text-center pt-5">
                           <h1 class="display-4 slideinright show-on-scroll">Contact Me</h1>
                           <h4 class="fade-in show-on-scroll">Questions, Comments, Ideas?</h4>
                           <div>
@@ -513,6 +496,7 @@
   <script src="js/dark-mode-switch.min.js"></script>
   <!--Autohide navbar-->
   <script src="js/autohide-clean.js"></script>
+  <!-- <script src="js/mobile-navbar-adjuster.js"></script> -->
   </body>
   <footer>
     <div class="footer-text">Face Photos by <a href="https://generated.photos/">Generated Photos</a></div>
