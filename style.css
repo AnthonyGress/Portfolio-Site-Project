@@ -215,7 +215,7 @@ h5, .card-body {
   color: #fff;
 }
 
-.mobile-navbar-dropdown {
+/* .mobile-navbar-dropdown {
   max-height: 100%;
   margin-top: -14px;
 }
@@ -223,12 +223,8 @@ h5, .card-body {
 .mobile-navbar-collapsed {
   max-height: 75px;
   margin-top: -14px;
-}
+} */
 
-.navbar-collapse.collapse.show {
-    max-height: 100%;
-    margin-top: -14px;
-}
 
 /* Change navbar styling on scroll Large Devices */
 @media (min-width: 992px) {
