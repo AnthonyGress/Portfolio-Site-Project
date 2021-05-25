@@ -78,6 +78,7 @@ body {
 @media (max-width:737px) and (max-height:500px){
   .hero .hero_content {
       padding:50px 0;
+      margin-top: 10px;
   }
 
  .intro, .intro2 {
@@ -94,8 +95,8 @@ body {
 @media (min-width:738px) and (max-height:500px){
   .hero .hero_content {
       padding:15px 0;
+      margin-top: 20px;
  }
-
 
 
 }
@@ -132,6 +133,7 @@ h5, .card-body {
   }
 }
 
+/* Most Mobile Devices */
 @media (max-width:737px ) {
   .half-panel {
     width: 60%;
@@ -146,10 +148,14 @@ h5, .card-body {
 
   .custom-switch {
     transform: scale(1.6,1.6);
-    margin-left: -140px;
+    margin-left: -144px;
     padding-top: 10px;
   }
 
+  .blank-space {
+    padding: 7px;
+    visibility: visible;
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -283,7 +289,9 @@ h5, .card-body {
     padding-bottom: 60px;
     left: 5%;
   }
-
+  .blank-space {
+    visibility: hidden;
+  }
 }
 
 @media (min-width: 1365px){
@@ -781,3 +789,4 @@ Shorthand
 .testimonial1 .testi1 .devider {
   height: 1px;
 }
+
