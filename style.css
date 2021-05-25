@@ -536,6 +536,29 @@ animation: slideinleft .8s 0s 1 normal forwards;
   animation: fadein 2s 3.8s 1 normal forwards;
 }
 
+.fade-in {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation: fadein 2s .2s 1 normal forwards;
+}
+.fade-in-delay {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation: fadein 2s 1.5s 1 normal forwards;
+}
+
+.fade-in-delay2{
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation: fadein 2s 3s 1 normal forwards;
+}
+
+.fade-in-delay3 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation: fadein 2s 3.8s 1 normal forwards;
+}
+
 .hidden{
   visibility: hidden;
 }
