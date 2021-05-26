@@ -15,7 +15,7 @@ window.onscroll = function() {
       document.getElementById("navbar").classList.remove('navbar-blur-dark');
     }
     if (_mobileMenuOpen === true) {
-        $("button.navbar-toggler").click();
+      $("button.navbar-toggler").click();
     }
   }
   else if (currentScrollPos == 0 || currentScrollPos < 0) {
@@ -24,7 +24,7 @@ window.onscroll = function() {
     document.getElementById("navbar").classList.add('navbar-blur');
     document.getElementById("navbar").classList.remove('navbar-blur-dark');
   }
-
+  
   else if (prevScrollpos < currentScrollPos){
     document.getElementById("navbar").classList.remove('scrolled-up');
     document.getElementById("navbar").classList.add('scrolled-down');

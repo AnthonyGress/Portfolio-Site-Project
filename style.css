@@ -112,7 +112,7 @@ body {
 
 /*end hero*/
 
-#about-header, #services, #portfolio, #testimonials, #contact {
+#about, #services, #portfolio, #testimonials, #contact {
   overflow-x: hidden;
   width: 100%;
 }
@@ -169,7 +169,6 @@ h5, .card-body {
   /* .navbar {
     max-height: 80px;
   } */
-
 }
 
 .scrolled-down{
@@ -296,10 +295,6 @@ h5, .card-body {
   }
 }
 @media (max-width: 992px) {
-  #testimonials {
-    padding-top: 18%;
-    margin-top: -15%;
-  }
   .custom-control{
     padding-bottom: 15px;
   }
@@ -329,6 +324,10 @@ h5, .card-body {
     margin-left: 25px;
     margin-top: -8px;
   }
+
+  /* #about{
+    padding-top: 50px;
+  } */
 
 }
 

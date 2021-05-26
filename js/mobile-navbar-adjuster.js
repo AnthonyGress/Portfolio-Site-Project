@@ -14,7 +14,7 @@ $(document).ready(function() {
         $(".navbar").removeClass("mobile-navbar-dropdown");
         $(".navbar").addClass("mobile-navbar-collapsed");
       } 
-      else if (navbarToggler.hasClass("collapse show"))
+      else if (navbarToggler.hasClass("show"))
       {
         $(".navbar").add("mobile-navbar-dropdown");
         $(".navbar").removeClass("mobile-navbar-collapsed");
