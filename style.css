@@ -55,7 +55,6 @@ body {
   background-position: top;
   height: 120%;
   margin-top: -60px;
-
 }
 .hero::before {
   content:'';
@@ -108,6 +107,10 @@ body {
  .navbar {
    margin-top: -15px;
  }
+
+ .hello {
+   font-size: 2rem;
+ }
 }
 
 /*end hero*/
@@ -142,7 +145,7 @@ h5, .card-body {
   }
 }
 
-/* Most Mobile Devices */
+/* Most Mobile Devices iphones */
 @media (max-width:737px ) {
   .half-panel {
     width: 60%;
@@ -261,7 +264,7 @@ h5, .card-body {
   }
 
   .card-body {
-    height: 350px;
+    height: 370px;
   }
 }
 
@@ -303,7 +306,7 @@ h5, .card-body {
 }
 
 /* ipads */
-@media (min-width: 750px) {
+@media (min-width: 750px) and (min-height: 767px) {
   .half-panel {
     width: 90%;
     height: 100%;
@@ -386,15 +389,19 @@ h5, .card-body {
   .custom-switch {
     transform: scale(1.2,1.2);
     margin-left: 25px;
-    margin-top: -10px;
   }
 
   .hello {
     margin-top: 50px;
+    font-size: 3rem;
   }
 
   .lead {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    transform: scale(1,1);
   }
 
   /* #about{
