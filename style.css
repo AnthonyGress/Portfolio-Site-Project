@@ -85,15 +85,30 @@ body {
   margin-top:-5%;
  }
 
- .card-body {
-  height: 450px;
+ .card-body1 {
+  height: 380px !important;
 }
+
+.card-body2 {
+  height: 300px !important;
+}
+
 .navbar {
   margin-top: -15px;
 }
 
 .navbar-nav {
   margin-top: -15px;
+}
+
+.slider-image {
+  height: 160px !important; 
+  margin: 0 0px !important;
+}
+
+.slider-image1 {
+  height: 150px !important;
+  margin: 0 0px !important;
 }
 
 }
@@ -108,8 +123,13 @@ body {
    margin-top: -15px;
  }
 
+ .nav-link {
+   margin-top: -6px;
+ }
+
  .hello {
    font-size: 2rem;
+
  }
  .half-panel {
   width: 100%;
@@ -120,6 +140,37 @@ body {
   left: 5%;
 }
 
+.custom-control{
+  margin-top: 8px;
+}
+
+.blank-space{
+  visibility: visible;
+}
+
+.display-4 {
+  font-size: 3rem !important;
+}
+
+h4 {
+  font-size: 1.5rem !important;
+}
+
+h5 {
+  line-height: 2.2rem !important;
+}
+
+.slider-image {
+  height: 200px !important; 
+  margin: 0 0px !important;
+  padding: 20px !important;
+}
+
+.slider-image1 {
+  height: 170px !important;
+  margin: 0 0px !important;
+  padding: 20px !important;
+}
 
 }
 
@@ -255,7 +306,7 @@ h5, .card-body {
 
 
 /* Change navbar styling on scroll Large Devices */
-@media (min-width: 992px) {
+@media (min-width: 980px) and (max-width:1199px) {
 
   .half-panel {
     width: 100%;
@@ -263,9 +314,12 @@ h5, .card-body {
     margin-top: 40px;
     position: relative;
   }
+  h5 {
+    line-height: 1rem;
+  }
 
   .card-body {
-    height: 370px;
+    height: 50vw;
   }
 }
 
@@ -399,7 +453,7 @@ h5, .card-body {
   }
 
   .lead {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .btn {
@@ -414,9 +468,17 @@ h5, .card-body {
     max-width: 100%;
   }
 
+  h5 {
+    line-height: 2.2rem !important;
+  }
+
+  .card-body {
+    height: 34vw;
+  }
+
 }
 
-@media (min-width: 1365px){
+@media (min-width: 1300px){
   .half-panel {
     width: 95%;
     height: 80%;
@@ -427,17 +489,33 @@ h5, .card-body {
   }
 
   .custom-control{
-    margin-top: -10px;
+    margin-top: -12px;
+  }
+
+  h5 {
+    line-height: 2.4rem !important;
+  }
+
+  .card-body {
+    height: 30vw;
   }
 }
 /* Change navbar styling on scroll XLarge Devices */
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
 
   .half-panel {
     width: 80%;
     height: 100%;
     margin-top: 40px;
     position: relative;
+}
+
+h5 {
+  line-height: 2.5rem !important;
+}
+
+.card-body {
+  height: 25vw;
 }
 }
 
@@ -625,7 +703,7 @@ animation: slideinleft .8s 0s 1 normal forwards;
 .fade-in.is-visible {
   opacity: 0;
   animation-fill-mode: forwards;
-  animation: fadein 2s .2s 1 normal forwards;
+  animation: fadein 2s .2s 1 forwards;
 }
 .fade-in-delay.is-visible {
   opacity: 0;
@@ -645,7 +723,7 @@ animation: slideinleft .8s 0s 1 normal forwards;
   animation: fadein 2s 3.8s 1 normal forwards;
 }
 
-.fade-in {
+.fade-in1 {
   opacity: 0;
   animation-fill-mode: forwards;
   animation: fadein 2s .2s 1 normal forwards;
@@ -674,120 +752,25 @@ animation: slideinleft .8s 0s 1 normal forwards;
 
 @keyframes slideinleft {
   from{
-    margin-left: -120%;
+    transform: translateX(-100%);
   }
   to {
-    margin-left: 0%;
+    transform: translateX(0%);
   }
 }
 
 @keyframes slideinright {
   from{
-    margin-right: -120%;
+    transform: translateX(100%);
   }
   to {
-    margin-right: 0%;
-  }
-}
-
-@-webkit-keyframes slideinright1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200%); 
-
-  }
-  10% {
-    -webkit-transform: translateX(180%); 
-
-  }
-  20% {
-    -webkit-transform: translateX(160%); 
-
-  }
-  30% {
-    -webkit-transform: translateX(140%);
-
-  }
-  40% {
-    -webkit-transform: translateX(120%);
-
-  }
-  50% {
-    -webkit-transform: translateX(100%);
-
-  }
-  60% {
-    -webkit-transform: translateX(80%);
-
-  }
-  70% {
-    -webkit-transform: translateX(60%);
-
-  }
-  80% {
-    -webkit-transform: translateX(40%);
-
-  }
-  90% {
-    -webkit-transform: translateX(20%);
- 
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-  }
-}
-
-@keyframes slideinright1 {
-  0% {
-    opacity: 0;
-    transform: translateX(200%); 
-    -ms-transform: translateX(-40%);
-  }
-  10% {
-    transform: translateX(180%); 
-    -ms-transform: translateX(-50%);
-  }
-  20% {
-    transform: translateX(160%); 
-    -ms-transform: translateX(-50%);
-  }
-  30% {
-    transform: translateX(140%);
-    -ms-transform: translateX(-60%); 
-  }
-  40% {
-    transform: translateX(120%);
-    -ms-transform: translateX(-60%); 
-  }
-  50% {
-    transform: translateX(100%);
-    -ms-transform: translateX(-60%); 
-  }
-  60% {
-    transform: translateX(80%);
-    -ms-transform: translateX(-60%); 
-  }
-  70% {
-    transform: translateX(60%);
-    -ms-transform: translateX(-60%); 
-  }
-  80% {
-    transform: translateX(40%);
-    -ms-transform: translateX(-60%); 
-  }
-  90% {
-    transform: translateX(20%);
-    -ms-transform: translateX(-60%); 
-  }
-  100% {
     transform: translateX(0%);
-    -ms-transform: translateX(-60%); 
   }
 }
 
 @keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes fadeout {
@@ -810,13 +793,27 @@ Shorthand
 #Magic-Carousel {
   display:flex;
   text-align: center;
+  padding-bottom: 5%;
 }
 
+.carousel-item{
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease,-webkit-transform .6s ease;
+} 
+
 .slider-image {
-  height: 250px;
+  height: 200px;
   margin: 0 25px;
   padding: 10px;
 }
+
+.slider-image1 {
+  height: 200px;
+  margin: 0 25px;
+  padding: 10px;
+}
+
 .carousel-control-next, .carousel-control-prev{ 
   background-color: black;
   display: none;
