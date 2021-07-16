@@ -1,4 +1,5 @@
 body {
+  /* stop ios double tap to zoom */
   touch-action: manipulation;
 }
 
