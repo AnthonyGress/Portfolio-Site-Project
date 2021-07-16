@@ -1,3 +1,7 @@
+body {
+  touch-action: manipulation;
+}
+
 .btn-primary, .btn-primary:active {
   background-color: blueviolet !important;
   border-color: blueviolet !important;
