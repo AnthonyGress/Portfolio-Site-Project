@@ -1,0 +1,34 @@
+.btn-primary, .btn-primary:active {
+  background-color: blueviolet !important;
+  border-color: blueviolet !important;
+  min-width: 100px !important;
+}
+
+.btn-primary:active, .btn-check:focus .btn-primary, .btn-primary:focus, .btn-primary:hover{
+  box-shadow: none !important;
+  background-color: rgb(109, 22, 190) !important;
+}
+
+@media screen and (max-width:768px) {
+  .btn {
+    padding: .7rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width:768px ) {
+  .card {
+    max-width: 70%;
+  }
+  .btn {
+    margin: .5rem;
+  }
+}
+@media screen and (min-width: 1200px ) {
+  .card {
+    max-width: 60%;
+  }
+  .card-image {
+    max-height: 40rem !important;
+  }
+}
