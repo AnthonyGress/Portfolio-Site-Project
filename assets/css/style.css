@@ -200,7 +200,7 @@ h5, .card-body {
 /* Most Mobile Devices iphones */
 @media (max-width:737px ) {
   .navbar {
-    margin-top: 1rem;
+    margin-top: 2rem !important;
   }
   .half-panel {
     width: 60%;
