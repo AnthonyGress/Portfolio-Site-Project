@@ -200,7 +200,7 @@ h5, .card-body {
 /* Most Mobile Devices iphones */
 @media (max-width:737px ) {
   .navbar {
-    margin-top: 1rem !important;
+    margin-top: 0rem !important;
     padding-top: 0;
     padding-top: env(safe-area-inset-bottom, 0);
   }
