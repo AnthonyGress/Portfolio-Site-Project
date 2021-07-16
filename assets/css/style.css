@@ -45,7 +45,7 @@ body {
 .hero {
   position:relative;
   background-color:#333;
-  background-image: url(img/splash1.jpg);
+  background-image: url(../../img/splash1.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -872,7 +872,7 @@ Shorthand
 }
 
 .service1 {
-  background-image: url(img/colorful-mac-side.jpg);
+  background-image: url(../../img/colorful-mac-side.jpg);
   width: 100%;
   height: 100%;
   margin-top: 0px;
@@ -884,7 +884,7 @@ Shorthand
   min-height: 400px;
 }
 .service2 {
-  background-image: url(img/laptop-repair.jpg);
+  background-image: url(../../img/laptop-repair.jpg);
   width: 100%;
   height: 100%;
   margin-top: 0px;
@@ -896,7 +896,7 @@ Shorthand
   min-height: 600px;
 }
 .service3 {
-  background-image: url(img/clean-dark-desk.jpg);
+  background-image: url(../../img/clean-dark-desk.jpg);
   width: 100%;
   height: 100%;
   margin-top: 0px;
