@@ -68,11 +68,20 @@ h2{
 }
 
 @media screen and (max-width:768px) {
+  a {
+    font-size: 1.5rem !important;
+  }
+
+  .btn-primary, .btn-primary:active {
+    min-width: 140px !important;
+  }
+
   .btn {
     margin-left: 2rem;
     margin-right: 2rem;
     padding-top: 20px;
     padding-bottom: 20px;
+
     }
 
   .top-row {
