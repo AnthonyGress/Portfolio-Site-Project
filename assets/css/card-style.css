@@ -48,10 +48,6 @@ h2{
   font-size: 1.5rem;
 }
 
-.shareIcon {
-  vertical-align:middle !important;
-}
-
 .share {
   display: flex;
   justify-content: center;
