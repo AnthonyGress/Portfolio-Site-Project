@@ -32,12 +32,6 @@ h2{
   padding: .7rem;
 }
 
-.btn-primary:active, .btn-check:focus .btn-primary, .btn-primary:focus, .btn-primary:hover, .shareBtn:hover, .shareBtn:active, .shareBtn:focus{
-  box-shadow: none !important;
-  background-color: rgb(109, 22, 190) !important;
-  color: white !important;
-}
-
 .shareBtn {
   height: 60px !important;
   width: 60px !important;
@@ -67,9 +61,11 @@ h2{
   transition: .3s transform ease-in-out;
 }
 
-@media (hover: none) {
-  .btn, .btn-primary, a {
-    background-color: blueviolet !important;
+@media (hover: hover) {
+  .btn-primary:active, .btn-check:focus .btn-primary, .btn-primary:focus, .btn-primary:hover, .shareBtn:hover, .shareBtn:active, .shareBtn:focus{
+    box-shadow: none !important;
+    background-color: rgb(109, 22, 190) !important;
+    color: white !important;
   }
 }
 
