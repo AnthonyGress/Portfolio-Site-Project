@@ -9,8 +9,8 @@ shareBtn.addEventListener('click', () => {
   if (navigator.share) {
     navigator.share({
       title: "Anthony's Card",
-      text: "This is Anthony's Digital Business Card. Let's Connect!",
-      url: 'https://techxguy.com/digital-card'
+      url: 'https://techxguy.com/digital-card',
+      text: "This is Anthony's Digital Business Card. Let's Connect!"
     }).then(() => {
       console.log('Thanks for sharing!');
     })
