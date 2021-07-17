@@ -1,28 +1,98 @@
-* {
-  /* stop ios double tap to zoom */
-  touch-action: manipulation;
+*{
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.display-4 {
+  font-size: 2.3rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.3rem;
+}
+
+.tag{
+  margin-top: 20px !important;
+  margin-bottom: 20px;
 }
 
 .btn-primary, .btn-primary:active {
   background-color: blueviolet !important;
   border-color: blueviolet !important;
-  min-width: 100px !important;
+  min-width: 120px !important;
+  padding: .7rem;
 }
 
-.btn-primary:active, .btn-check:focus .btn-primary, .btn-primary:focus, .btn-primary:hover{
+.btn-primary:active, .btn-check:focus .btn-primary, .btn-primary:focus, .btn-primary:hover, .shareBtn:hover, .shareBtn:active, .shareBtn:focus{
   box-shadow: none !important;
   background-color: rgb(109, 22, 190) !important;
+  color: white !important;
+}
+
+.shareBtn {
+  height: 60px !important;
+  width: 60px !important;
+  background-color: blueviolet !important;
+  border-color: blueviolet !important;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.shareIcon {
+  vertical-align:middle !important;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.qr-code {
+  transition: .3s transform ease-in-out;
 }
 
 @media screen and (max-width:768px) {
   .btn {
-    padding: .7rem;
-    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+
+  .top-row {
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
   }
 
-  .card {
-    padding-bottom: 5rem !important;
+  .shareBtn{
+    height: 70px !important;
+    width: 70px !important;
   }
+  
+  .bottom-row {
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+
 }
 
 @media screen and (min-width:768px ) {
@@ -32,12 +102,53 @@
   .btn {
     margin: .5rem;
   }
+
 }
-@media screen and (min-width: 1200px ) {
-  .card {
-    max-width: 60%;
+@media screen and (min-width: 1024px ) {
+
+  .display-4 {
+    font-size: 2.5rem;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2{
+    font-size: 1.3rem;
+  }
+
+  .card {
+    max-width: 40%;
+  }
+
   .card-image {
-    max-height: 40rem !important;
+    max-height: 500px !important;
+  }
+
+  .card-body {
+    padding-bottom: 0px !important;
+  }
+
+  .btn {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .top-row {
+    justify-content: space-evenly;
+    margin-top: -1rem;
+  }
+
+  .share {
+    height: 80px;
+  }
+  
+  .bottom-row {
+    justify-content: space-evenly;
+  }
+
+  .qr-code{
+    display: none;
   }
 }
