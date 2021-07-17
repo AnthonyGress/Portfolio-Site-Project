@@ -5,6 +5,7 @@
 body, html {
   height: 100%;
   width: 100%;
+  /* fix ios double tap zoom (also use onclick on body) */
   touch-action: manipulation;
 }
 
@@ -60,7 +61,7 @@ h2{
 .qr-code {
   transition: .3s transform ease-in-out;
 }
-
+/* fix ios sticky button bug */
 @media (hover: hover) {
   .btn-primary:active, .btn-check:focus .btn-primary, .btn-primary:focus, .btn-primary:hover, .shareBtn:hover, .shareBtn:active, .shareBtn:focus{
     box-shadow: none !important;
