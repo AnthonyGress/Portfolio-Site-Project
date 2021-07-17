@@ -67,6 +67,12 @@ h2{
   transition: .3s transform ease-in-out;
 }
 
+@media (hover: none) {
+  .btn, .btn-primary, a {
+    background-color: blueviolet !important;
+  }
+}
+
 @media screen and (max-width:768px) {
   a {
     font-size: 1.3rem !important;
